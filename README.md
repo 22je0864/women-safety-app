@@ -46,7 +46,5 @@ README.md
 - Share live location continuously.
 - Add multilingual UI.
 
-## 📜 License
-MIT License.
-  <img src="https://via.placeholder.com/600x300.png?text=Empowering+Women+Everywhere" alt="Empowering Women Banner" width="70%" />
+
 </p>
