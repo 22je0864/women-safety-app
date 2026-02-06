@@ -16,8 +16,20 @@
     <!-- SOS Section -->
     <section id="sos-section">
       <h2>Send SOS Alert</h2>
-      <p>Click below to alert your trusted contacts with your location:</p>
-      <button id="sos-button">Send SOS Alert</button>
+      <p>Send a quick emergency message with your live location. Add contacts below to make this effective.</p>
+      <div class="status-card" id="location-status">
+        <strong>Location status:</strong>
+        <span id="location-text">Waiting for SOS request.</span>
+      </div>
+      <div class="sos-actions">
+        <button id="sos-button">Send SOS Alert</button>
+        <button id="copy-button" type="button">Copy SOS Message</button>
+      </div>
+      <div class="sos-message">
+        <label for="sos-message">SOS message preview</label>
+        <textarea id="sos-message" rows="3" readonly></textarea>
+        <p class="helper-text">Tip: On mobile, tap a contact below to call or text quickly.</p>
+      </div>
     </section>
 
     <!-- Trusted Contacts -->
@@ -26,6 +38,7 @@
       <ul id="contacts-list">
         <!-- Contacts will be dynamically added here -->
       </ul>
+      <p id="empty-contacts" class="helper-text">No contacts yet. Add at least one trusted person.</p>
       <form id="add-contact-form">
         <input type="text" id="contact-name" placeholder="Contact Name" required>
         <input type="text" id="contact-number" placeholder="Phone Number" required>
@@ -40,6 +53,15 @@
         <li><strong>Police:</strong> 100</li>
         <li><strong>Women’s Helpline:</strong> 1091</li>
         <li><strong>Emergency Medical:</strong> 108</li>
+      </ul>
+    </section>
+
+    <section id="tips-section">
+      <h2>Quick Safety Checklist</h2>
+      <ul>
+        <li>Share your trip details with a trusted contact before leaving.</li>
+        <li>Keep your phone charged and location services enabled.</li>
+        <li>Stay in well-lit, populated areas whenever possible.</li>
       </ul>
     </section>
   </main>

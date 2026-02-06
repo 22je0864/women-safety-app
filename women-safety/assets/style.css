@@ -44,6 +44,100 @@ body {
   button:hover {
     background-color: #d81b60;
   }
+
+  .status-card {
+    background-color: #fff3f7;
+    border: 1px solid #f3c2d4;
+    border-radius: 6px;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+
+  .sos-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  #copy-button {
+    background-color: #4a148c;
+  }
+
+  #copy-button:hover {
+    background-color: #380f6e;
+  }
+
+  .sos-message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sos-message textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+  }
+
+  .helper-text {
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  #contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .contact-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-actions a,
+  .contact-actions button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+
+  .contact-actions .remove-button {
+    background-color: #6c757d;
+  }
+
+  .contact-actions .remove-button:hover {
+    background-color: #5a6268;
+  }
   
   form input {
     width: calc(50% - 10px);
@@ -65,6 +159,11 @@ body {
   
     form input {
       width: 100%;
+    }
+
+    .sos-actions {
+      flex-direction: column;
+      align-items: stretch;
     }
   }
   
